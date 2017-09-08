@@ -111,7 +111,7 @@ Add a script to that node, with the following code:
     func _gui_input(ev):
 
         if (ev is InputEventMouseButton and ev.pressed):
-            tapped=true
+            tapped=not tapped
             update()
 
 Then run the scene. When the rectangle is clicked/tapped, it will change
